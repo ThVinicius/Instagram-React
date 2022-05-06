@@ -10,10 +10,10 @@
   align-items: center;
   font-family: 'Roboto', sans-serif;
 }
-.cinza{
+.corCinza{
   color: #8e8e8e;
 }
-.preto{
+.corPreto{
   color: #262626;
 }
 /* -------barra  topo-------*/
@@ -46,10 +46,6 @@ input {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
 }
-/* .barra-topo img {
-  height: 29px;
-  width: 103px;
-} */
 .barra-topo ion-icon {
   width: 23px;
   height: 23px;
