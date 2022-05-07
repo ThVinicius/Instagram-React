@@ -53,11 +53,11 @@ export default function SideBar() {
           <Suggestions src={item.src} text={item.text} />
         ))}
         <div class="creditos-sidebar">
-          <h3>© 2021 INSTAGRAM DO FACEBOOK</h3>
           <h3>
             Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
             Localizações • Contas mais relevantes • Hashtags • Idioma
           </h3>
+          <h3>© 2021 INSTAGRAM DO FACEBOOK</h3>
         </div>
       </div>
     </div>

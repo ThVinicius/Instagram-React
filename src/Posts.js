@@ -1,4 +1,14 @@
+import React from 'react'
+
 function Post(props) {
+  const [contador, setContador] = React.useState(0)
+  function like() {
+    setContador(contador + 1)
+  }
+  function likePost() {
+    setContador(2 * contador + 1)
+  }
+
   return (
     <div class="post">
       <div class="post-topo">
@@ -8,11 +18,22 @@ function Post(props) {
         </div>
         <ion-icon name="ellipsis-horizontal"></ion-icon>
       </div>
-      {props.post}
+      <div onClick={likePost}>{props.post}</div>
       <div class="post-baixo">
         <div class="ajuste1">
           <div>
-            <ion-icon name="heart-outline"></ion-icon>
+            <span
+              onClick={like}
+              className={contador % 2 === 0 ? ' ' : 'escondido'}
+            >
+              <ion-icon name="heart-outline"></ion-icon>
+            </span>
+            <span
+              onClick={like}
+              className={contador % 2 === 1 ? ' ' : 'escondido'}
+            >
+              <ion-icon class="corVermelha" name="heart-sharp"></ion-icon>
+            </span>
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
