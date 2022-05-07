@@ -7,7 +7,7 @@ import MenuMobile from './MenuMobile'
 
 export default function App() {
   return (
-    <div class="body">
+    <>
       {/* <!------------barra topo--------> */}
       <BarraTopo />
       {/* <!------------barra topo--------> */}
@@ -38,6 +38,6 @@ export default function App() {
       {/* <!---------------menu mobile-------------> */}
       <MenuMobile />
       {/* <!---------------menu mobile-------------> */}
-    </div>
+    </>
   )
 }

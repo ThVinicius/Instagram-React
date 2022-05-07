@@ -5,7 +5,7 @@
 ion-icon, .ajuste-sidebar3 img, .ajuste-sidebar3 h4, .ajuste-sidebar3 h6, .alinhar img, .alinhar h6, .ajuste img, .ajuste h1, .post-topo img, .post-topo h6, .post-baixo img, .creditos-sidebar h3:first-child, strong{
   cursor: pointer;
 }
-.body {
+.root {
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
