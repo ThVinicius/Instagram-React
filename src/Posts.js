@@ -1,9 +1,9 @@
 import React from 'react'
 
 function Post(props) {
-  const [contador, setContador] = React.useState(0)
+  const [valor, setValor] = React.useState(0)
   function like(num) {
-    setContador(num)
+    setValor(num)
   }
 
   return (
@@ -21,13 +21,13 @@ function Post(props) {
           <div>
             <span
               onClick={() => like(1)}
-              className={contador % 2 === 0 ? ' ' : 'escondido'}
+              className={valor % 2 === 0 ? ' ' : 'escondido'}
             >
               <ion-icon name="heart-outline"></ion-icon>
             </span>
             <span
               onClick={() => like(0)}
-              className={contador % 2 === 1 ? ' ' : 'escondido'}
+              className={valor % 2 === 1 ? ' ' : 'escondido'}
             >
               <ion-icon class="corVermelha" name="heart-sharp"></ion-icon>
             </span>
