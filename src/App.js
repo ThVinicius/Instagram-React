@@ -8,36 +8,21 @@ import MenuMobile from './MenuMobile'
 export default function App() {
   return (
     <>
-      {/* <!------------barra topo--------> */}
       <BarraTopo />
-      {/* <!------------barra topo--------> */}
 
-      {/* <!------------barra topo do mobile --------> */}
       <BarraTopoMobile />
-      {/* <!------------barra topo do mobile --------> */}
 
-      {/* <!------------conteudo--------> */}
       <div class="conteudo">
         <div class="conteudo-pagina">
-          {/* <!---------------- stories -----------------> */}
           <Stories />
-          {/* <!---------------- stories -----------------> */}
 
-          {/* <!------------posts--------> */}
           <Posts />
         </div>
 
-        {/* <!------------posts--------> */}
-
-        {/* <!----------sidebar-------------> */}
         <SideBar />
-        {/* <!----------sidebar-------------> */}
       </div>
-      {/* <!------------conteudo--------> */}
 
-      {/* <!---------------menu mobile-------------> */}
       <MenuMobile />
-      {/* <!---------------menu mobile-------------> */}
     </>
   )
 }
